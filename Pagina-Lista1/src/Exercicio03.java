@@ -1,34 +1,25 @@
+package aula08;
+
 import java.util.Scanner;
 
-// 03 - Implemente um programa em java que solicite ao usuário a entrada de quatro números de ponto flutuante e mostre a soma deles.
-
 public class Exercicio03 {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        // Solicita ao usuário para inserir o primeiro número
-        System.out.print("Digite o primeiro número: ");
-        double numero1 = scanner.nextDouble();
+        String nome, telefone, endereco;
 
-        // Solicita ao usuário para inserir o segundo número
-        System.out.print("Digite o segundo número: ");
-        double numero2 = scanner.nextDouble();
+        Scanner sc = new Scanner(System.in);
 
-        // Solicita ao usuário para inserir o terceiro número
-        System.out.print("Digite o terceiro número: ");
-        double numero3 = scanner.nextDouble();
+        System.out.print("Entre com o seu nome: ");
+        nome = sc.nextLine();
 
-        // Solicita ao usuário para inserir o quarto número
-        System.out.print("Digite o quarto número: ");
-        double numero4 = scanner.nextDouble();
+        System.out.print("\nEntre com o seu telefone: ");
+        telefone = sc.nextLine();
 
-        // Calcula a soma dos quatro números
-        double soma = numero1 + numero2 + numero3 + numero4;
+        System.out.print("\nEntre com o seu endere�o: ");
+        endereco = sc.nextLine();
 
-        // Exibe a soma
-        System.out.println("A soma dos quatro números é: " + soma);
-
-        // Fecha o scanner
-        scanner.close();
+        System.out.println("\nNome: " + nome + "\nTelefone: " + telefone + "\nEndere�o: " + endereco);
     }
+
 }

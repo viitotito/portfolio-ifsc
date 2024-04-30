@@ -1,30 +1,23 @@
+package aula08;
+
 import java.util.Scanner;
 
-// 02 - Implemente um programa em java que solicite ao usuário a entrada de três números de ponto flutuante e mostre a soma deles.
-
 public class Exercicio02 {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        
+        int numeroInteiro;
+        
+        Scanner sc = new Scanner(System.in);
 
-        // Solicita ao usuário para inserir o primeiro número
-        System.out.print("Digite o primeiro número: ");
-        double numero1 = scanner.nextDouble();
+        System.out.print("Entre com um n�mero inteiro: ");
+        numeroInteiro = sc.nextInt();
 
-        // Solicita ao usuário para inserir o segundo número
-        System.out.print("Digite o segundo número: ");
-        double numero2 = scanner.nextDouble();
+        System.out.println("\nO n�mero digitado foi " + numeroInteiro);
 
-        // Solicita ao usuário para inserir o terceiro número
-        System.out.print("Digite o terceiro número: ");
-        double numero3 = scanner.nextDouble();
+        System.out.println("\nO antecessor do n�mero � " + (numeroInteiro - 1));
 
-        // Calcula a soma dos três números
-        double soma = numero1 + numero2 + numero3;
-
-        // Exibe a soma
-        System.out.println("A soma dos três números é: " + soma);
-
-        // Fecha o scanner
-        scanner.close();
+        System.out.println("\nO sucessor do n�mero � " + (numeroInteiro + 1));
     }
+
 }
